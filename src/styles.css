@@ -1291,9 +1291,8 @@ nav img {
   gap: 16px;
 }
 
-
 .contact-img img{
- width: 90%;
+ max-width: 100%;
  border-radius: 20px;
 }
 
@@ -1360,8 +1359,6 @@ footer {
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  /* background: var(--navy2); */
-  /* border: 1px solid var(--border); */
   display: flex;
   align-items: center;
   justify-content: center;

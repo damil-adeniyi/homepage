@@ -33,31 +33,30 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// chatBtn.addEventListener('click', () => {
-//   window.scrollTo({
-//     top: 0,
-//     behavior: 'smooth'
-//   });
-// });
-
 // light mode toggle
 const modeToggle = document.querySelector('.mode-toggle');
 const modeimg = document.querySelector('.mode-img');
 const body = document.body;
 const heroImg = document.querySelector('.hero-profile');
+
+import moon from './img/moon.png';
+import sun from './img/sun.png';
+import hero1 from './img/hero.jpg';
+import hero2 from './img/hero2.jpg';
+
 modeToggle.addEventListener('click', () => {
   body.classList.toggle('light-mode');
 
-  if (modeimg.getAttribute('src') === 'img/moon.png') {
-        modeimg.src = 'img/sun.png';
+  if (modeimg.getAttribute('src') === sun) {
+        modeimg.src = moon;
     } else {
-        modeimg.src = 'img/moon.png';
+        modeimg.src = sun;
     }
 
-  if (heroImg.getAttribute('src') === 'img/hero.jpg') {
-        heroImg.src = 'img/hero2.jpg';
+  if (heroImg.getAttribute('src') === hero2) {
+        heroImg.src = hero1;
     } else {
-        heroImg.src = 'img/hero.jpg';
+        heroImg.src = hero2;
     }
 
 });

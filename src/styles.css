@@ -262,7 +262,7 @@ nav img {
 /* ========================================================================== */
 
 #hero {
-  min-height: 900px;
+  min-height: 1100px;
   padding-top: 140px;
   padding-bottom: 100px;
   display: flex;
@@ -302,12 +302,11 @@ nav img {
   justify-content: center;
   width: 50%;
 
-
 }
 
 .hero-img img {
   width: 100%;
-  height: 600px;
+  height: 700px;
   /* height: auto; */
   border-radius: 50px;
   object-fit: cover;
@@ -348,7 +347,7 @@ nav img {
 }
 
 .hero-h1 {
-  font-size: clamp(44px, 5vw, 88px);
+  font-size: clamp(40px, 5vw, 88px);
   font-weight: 800;
   line-height: 1.02;
   letter-spacing: -0.02em;
@@ -770,28 +769,24 @@ nav img {
 
 .projects-swiper {
   width: 80%;
-  padding: 10px;
-  background-color: var(--navy);
-  border: 1px solid var(--border);
-  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 
-.projects-grids-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.projects-grids-swiper {
-  width: 100%;
-}
 
 .projects-grids {
-  width: 100%;
-  display: flex;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 1rem;
+  padding: 30px 20px;
+   background-color: var(--navy);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  
+  
 }
 
 .project-card {
@@ -1276,7 +1271,6 @@ nav img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
   background: var(--navy3);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -1320,9 +1314,10 @@ nav img {
 }
 
 .contact-item-text p:last-child {
-  font-size: 14px;
+  font-size: 12px;
   color: var(--text);
   font-weight: 500;
+  word-break: break-all;
 }
 
 /* ========================================================================== */
@@ -1514,12 +1509,14 @@ footer {
 }
 
 .projects-swiper {
-  width: 80%;
+  width: 90%;
 }
 
 .projects-grids {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
 .testis-swiper {
@@ -1550,11 +1547,13 @@ footer {
 
   .projects-grids {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
 .stat-num {
-    font-size: 28px; 
+    font-size: 20px; 
 }
 
 .contact-img img{
